@@ -1,5 +1,5 @@
 <?php
-// class car
+// class person
 class person
 {
 	//Attributes of the class
