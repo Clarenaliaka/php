@@ -1,11 +1,12 @@
 <?php
 class Car{
-	public function __construct($make, $color, $cost, $country)
+	public function __construct($make, $color, $cost, $country,$size)
 	{
 		$this->make = $make;
 		$this->color = $color;
 		$this->cost = $cost;
 		$this->country = $country;
+		$this->size = $size;
 	}
 
 	public function make()
@@ -27,10 +28,15 @@ class Car{
 	{
 		return $this->country;
 	}
+	
+	public function size()
+	{
+		return $this->size;
+	}
 }
 
 
-$car = new car("Toyota","Red","2.1m","Japan");
+$car = new car("Toyota","Red","2.1m","Japan","medium");
 echo $car->make();
 echo "<br>";
 echo $car->color();
@@ -38,3 +44,5 @@ echo "<br/>";
 echo $car->cost();
 echo "<br/>";
 echo $car->country();
+echo "<br/>";
+echo $car->size();
